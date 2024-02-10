@@ -1,0 +1,10 @@
+^C:\USERS\NOAHL\SOURCE\REPOS\NFTSLIME\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/noahl/source/repos/nftslime -BC:/Users/noahl/source/repos/nftslime --check-stamp-file C:/Users/noahl/source/repos/nftslime/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
